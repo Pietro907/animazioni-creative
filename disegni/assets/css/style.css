@@ -29,7 +29,7 @@ body {
     position: absolute;
     border: 2.5px solid #800000;
     border-radius: 5px;
-    top: 25px;
+    top: 30px;
     left: 12.5%;
     box-shadow: 4px 4px 20px 0px inset rgba(0, 0, 0, 0.632);
 }
@@ -56,7 +56,7 @@ body {
     position: absolute;
     border: 2.5px solid #800000;
     border-radius: 5px;
-    bottom: 25px;
+    bottom: 45px;
     left: 12.5%;
     box-shadow: 4px 4px 20px 0px inset rgba(0, 0, 0, 0.632);
 }
@@ -122,10 +122,10 @@ body {
 }
 
 .plant {
-    background: rgba(128, 128, 128, 0.364);
     width: 400px;
     height: 600px;
     position: relative;
+    margin: 0 0 1rem;
 }
 
 .plant_pot {
@@ -140,13 +140,14 @@ body {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    box-shadow: black -2px 1px 15px 0px;
 }
 
 .plant_pot::before {
     content: "";
     background: #7c5217;
     border: 1px solid black;
-    width: 150px;
+    width: 149.5px;
     height: 50px;
     position: absolute;
     bottom: 65px;
@@ -154,6 +155,104 @@ body {
     border-radius: 50%;
     transform: rotateX(180deg);
 }
+
+.plant_pot::after {
+    content: "";
+    background: #6c3c0c;
+    border: 1px solid black;
+    width: 145px;
+    height: 45px;
+    position: absolute;
+    bottom: 68px;
+    left: 2px;
+    border-radius: 50%;
+    transform: rotateX(180deg);
+}
+
+.terra {
+    width: 141px;
+    height: 40px;
+    background: #493017;
+    border-radius: 50%;
+    position: relative;
+    top: -9px;
+    left: 5px;
+    z-index: 1;
+}
+
+.bambu {
+    width: 12px;
+    height: 200px;
+    background: #799f4d;
+    position: absolute;
+    bottom: 90px;
+    left: 120px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: 2;
+}
+
+.bambu::before {
+    content: "";
+    width: 4px;
+    height: 200px;
+    background: #386415;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 3px;
+    z-index: 2;
+}
+
+.bambu::after {
+    content: "";
+    width: 1px;
+    height: 200px;
+    background: #b2da88;
+    position: absolute;
+    bottom: 0px;
+    left: 2px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 3px;
+    box-shadow: black -4px 1px 4px 0.5px;
+    z-index: 2;
+}
+
+.node_1 {
+    background-color: yellow;
+    width: 14px;
+    height: 1.5px;
+    border-radius: 2px;
+    border: 0.5px solid rgb(138, 138, 9);
+    z-index: 3;
+    position: relative;
+    top: 25%;
+    left: -2px;
+}
+.node_2 {
+    background-color: yellow;
+    width: 14px;
+    height: 1.5px;
+    border-radius: 2px;
+    border: 0.5px solid rgb(138, 138, 9);
+    z-index: 3;
+    position: relative;
+    top: 50%;
+    left: -2px;
+}
+.node_3 {
+    background-color: yellow;
+    width: 14px;
+    height: 1.5px;
+    border-radius: 2px;
+    border: 0.5px solid rgb(138, 138, 9);
+    z-index: 3;
+    position: relative;
+    top: 75%;
+    left: -2px;
+}
+
 
 
 
