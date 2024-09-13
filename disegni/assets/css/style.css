@@ -127,6 +127,21 @@ body {
     position: relative;
     margin: 0 0 1rem;
 }
+.etichetta{
+    position: absolute;
+    bottom: 15px;
+    left: 145px;
+    z-index: 2;
+}
+h2{
+    background: #fff;
+    font-size: medium;
+    margin: 0;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: black -1px 5px 12px -2px;
+}
 
 .plant_pot {
     background: #88540b;
