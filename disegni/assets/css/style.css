@@ -1,3 +1,4 @@
+/* #region door */
 
 .first_picture{
     width: 800px;
@@ -7,28 +8,125 @@
     align-items: center;
 }
 .door{
-    background-color: brown;
+    background-color: #800000;
     width: 200px;
     height: 400px;
     box-shadow: 10px -5px 20px 3px rgba(0, 0, 0, 0.632);
     position: relative;
     transform-style: preserve-3d;
 }
+
+/* #region door rectangle top */
 .door-front{
     width: 140px;
     height: 100px;
     position: absolute;
-    border: 2.5px solid brown;
+    border: 2.5px solid #800000;
+    border-radius: 5px;
     top: 25px;
     left: 12.5%;
-    box-shadow: 0px 2px 20px 3px inset rgba(0, 0, 0, 0.632);
+    box-shadow: 4px 4px 20px 0px inset rgba(0, 0, 0, 0.632);
 }
+.door-front::before, .door-front::after{
+    content: "";
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    border: 5px solid #800000;
+    border-radius: 5px;
+    top: -5px;
+    left: -5px;
+    box-shadow: 4px 4px 20px -5px rgba(0, 0, 0, 0.632);
+}
+
+/* #endregion door rectangle top */
+
+/* #region door rectangle bottom */
 .door-back{
     width: 140px;
     height: 100px;
     position: absolute;
-    border: 2.5px solid brown;
-    bottom: 50px;
+    border: 2.5px solid #800000;
+    border-radius: 5px;
+    bottom: 25px;
     left: 12.5%;
-    box-shadow: 0px 2px 20px 3px inset rgba(0, 0, 0, 0.632);
+    box-shadow: 4px 4px 20px 0px inset rgba(0, 0, 0, 0.632);
+}
+.door-back::before, .door-back::after{
+    content: "";
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    border: 5px solid #800000;
+    border-radius: 5px;
+    bottom: -5px;
+    left: -5px;
+    box-shadow: 4px 4px 20px -5px  rgba(0, 0, 0, 0.632);
+}
+
+/* #endregion door rectangle bottom */
+
+/* #region door handle */
+
+.handle{
+    background: #985700;
+    width: 28px;
+    height: 9px;
+    border: 1px solid #88540b;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    box-shadow: black -1px 2px 10px -3px;
+}
+.handle::after{
+    content: "";
+    background: #985700;
+    width: 5px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid #88540b;
+    position: absolute;
+    top: 55%;
+    right: 5px;
+    transform: rotateZ(-10deg);
+    box-shadow: black -1px 2px 10px 0px;
+    z-index: -1;
+}
+
+/* #endregion door handle */
+
+/* #region door lock */
+
+/* #endregion door lock */
+
+
+/* #endregion door */
+
+
+
+
+
+
+
+
+
+
+
+.test{
+    margin: 2rem;
+}
+.prova1{
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin: 0.5rem;
+}
+.prova1::before,.prova1::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 0.5rem;
+    padding: 0 1rem;
 }
