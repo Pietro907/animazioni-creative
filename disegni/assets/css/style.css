@@ -109,7 +109,7 @@ body {
 
 /* #region door lock */
 
-/* #endregion door lock */
+/* #region door lock */
 
 
 /* #endregion door */
@@ -204,6 +204,8 @@ h2{
     left: 120px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 4px;
     z-index: 2;
 }
 
@@ -217,20 +219,22 @@ h2{
     right: 0px;
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 3px;
+    border-top-right-radius: 10px;
     z-index: 2;
 }
 
 .bambu::after {
     content: "";
     width: 1px;
-    height: 200px;
+    height: 197.5px;
     background: #b2da88;
     position: absolute;
     bottom: 0px;
     left: 2px;
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 3px;
-    box-shadow: black -4px 1px 4px 0.5px;
+    border-top-left-radius: 3px;
+    box-shadow: black -4px 1px 4px 0px;
     z-index: 2;
 }
 
@@ -269,6 +273,106 @@ h2{
 }
 
 
+/* #region milk box */
+
+.milk_box{
+    background: rgb(242, 241, 241);
+    width: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box{
+    width: 40px;
+    height: 80px;
+    border: 1px solid black;
+}
+.box::after{
+    content: "";
+    width: 40px;
+    height: 80px;
+    border: 1px solid black;
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    border-bottom: none;
+    border-left: none;
+}
+.box_line{
+    width: 21px;
+    height: 4px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    top: 51px;
+    left: 28px;
+    transform: rotateZ(-45deg);
+}
+.box_line::before{
+    content: "";
+    width: 20px;
+    height: 4px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    top: 28px;
+    left: 28.5px;
+    transform: rotateZ(-2deg);
+}
+.box_line::after{
+    content: "";
+    width: 21px;
+    height: 4px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    top: 85px;
+    left: -28px;
+    transform: rotateZ(-4deg);
+}
+.box_head{
+    width: 20px;
+    height: 30px;
+    background: rgb(245, 132, 132);
+    position: absolute;
+}
+.head_line_1{
+    width: 19px;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.head_line_2{
+    width: 30px;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 15px;
+    left: -1px;
+    transform: rotateZ(72deg);
+}
+.head_line_3{
+    width: 30px;
+    border: 1px solid black;
+    position: absolute;
+    top: 14px;
+    right: -1px;
+    transform: rotateZ(-73deg);
+}
+
+
+/* #region box */
+/* #endregion box */
+/* #endregion milk box */
 
 
 
