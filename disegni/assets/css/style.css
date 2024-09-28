@@ -352,21 +352,49 @@ h2 {
     z-index: 1;
 }
 
+.leaf::before {
+    content: "";
+    width: 0.5px;
+    height: 0px;
+    box-shadow: 0px 0px 13px 0px black;
+    border-left: 0px solid transparent;
+    border-right: 0.1px solid transparent;
+    border-bottom: 5px solid#386415;
+    position: absolute;
+    top: -3px;
+    left: 1px;
+    transform: rotateZ(1deg);
+    z-index: 1;
+}
 .leaf::after {
     content: "";
     width: 0.5px;
     height: 0px;
     box-shadow: 0px 0px 13px 0px black;
-    border-left: 0.1px solid transparent;
+    border-left: 0px solid transparent;
     border-right: 0.1px solid transparent;
-    border-bottom: 5px solid#386415;
+    border-bottom: 8px solid#799f4d;
     position: absolute;
     top: -3px;
     left: 0px;
     transform: rotateZ(1deg);
     z-index: 1;
 }
-
+.leaf_second_color{
+    width: 1px;
+    height: 16px;
+    background: #799f4d;
+    Position: absolute;
+    top: -2px;
+    left: -1px;
+    transform: rotateZ(0deg);
+    border-radius: 50%;
+    border-top: 2px solid #799f4d;
+    border-left: 1px solid #799f4d;
+    border-right: 1px solid #799f4d;
+    border-bottom: 2px solid #799f4d;
+    z-index: 1;
+}
 /* #region milk box */
 
 .milk_box {
